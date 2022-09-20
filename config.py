@@ -12,7 +12,8 @@ idc_path = "/home/Research/ZS_ASP/" # the folder of audioset class count files
 balanced_data = True
 
 # trained from a checkpoint, or evaluate a single model 
-resume_checkpoint = None
+resume_checkpoint = "/home/gergo/[vscode_workspace]/[szakdoga]/[test_for_dlsep]/Zero_Shot_Audio_Source_Separation/data/zeroshot_asp_full.ckpt"
+# None
 # "/home/Research/ZS_ASP/model_backup/zeroshot_asp_full.ckpt"
 
 loss_type = "mae"
@@ -44,11 +45,11 @@ random_mode = "one_class" # "no_random, one_class, random, order", one class is 
 musdb_path = "/home/Research/ZS_ASP/data/musdb-wav/" # musdb download folder
 testavg_path = "/home/Research/ZS_ASP/data/musdb30-train-32000fs.npy" # the processed training set (to get the latent query)
 testset_path = "/home/Research/ZS_ASP/data/musdb-test-32000fs.npy" # the processed testing set (to calculate the performance)
-test_key = ["vocals", "drums", "bass", "other"] # four tracks for musdb, and your named track for other inference
+test_key = ["valamelyik"] # four tracks for musdb, and your named track for other inference
 test_type = "mix"
 infer_type = "mean"
 energy_thres = 0.1
-wave_output_path = "/home/Research/ZS_ASP/wavoutput" # output folder
+wave_output_path = "/home/gergo/[vscode_workspace]/[szakdoga]/[test_for_dlsep]" # output folder
 using_wiener = True # use wiener filter or not (default: True)
 using_whiting = False # use whiting or not (default: False)
 
@@ -57,6 +58,6 @@ wa_model_folder = "/home/Research/ZS_ASP/version_3/checkpoints/"
 wa_model_path = "zs_wa.ckpt"
 
 # for inference
-inference_file = "/home/Research/ZS_ASP/data/pagenini.wav" # an audio file to separate
-inference_query = "/home/Research/ZS_ASP/data/query" # a folder containing all samples for obtaining the query
+inference_file = "/home/gergo/[vscode_workspace]/[szakdoga]/[test_for_dlsep]/Zero_Shot_Audio_Source_Separation/data/mixed_noise.wav" # an audio file to separate
+inference_query = "/home/gergo/[vscode_workspace]/[szakdoga]/[test_for_dlsep]/Zero_Shot_Audio_Source_Separation/data/query" # a folder containing all samples for obtaining the query
 overlap_rate = 0.0 # [0.0, 1.0), 0 to disabled, recommand 0.5 for 50% overlap. Overlap will increase computation time and improve result quality

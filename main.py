@@ -225,7 +225,7 @@ def inference():
     at_model.load_state_dict(ckpt["state_dict"])
     
     trainer = pl.Trainer(
-        gpus = 1
+        gpus = 0
     )
     avg_at = None
     # obtain the latent embedding as query
