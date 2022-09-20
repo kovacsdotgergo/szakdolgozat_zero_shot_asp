@@ -647,7 +647,7 @@ class AutoTaggingWarpper(pl.LightningModule):
         self.at_model = at_model
         self.config = config
         self.target_keys = target_keys
-        self.opt_thres = pickle.load(open('opt_thres.pkl', 'rb'))
+        self.opt_thres = pickle.load(open('./opt_thres.pkl', 'rb'))
         self.avg_at = None
 
     def test_step(self, batch, batch_idx):
