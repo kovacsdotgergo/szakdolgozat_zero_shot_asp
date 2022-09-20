@@ -12,7 +12,7 @@ idc_path = "/home/Research/ZS_ASP/" # the folder of audioset class count files
 balanced_data = True
 
 # trained from a checkpoint, or evaluate a single model 
-resume_checkpoint = "/home/gergo/[vscode_workspace]/[szakdoga]/[test_for_dlsep]/Zero_Shot_Audio_Source_Separation/data/zeroshot_asp_full.ckpt"
+resume_checkpoint = '../input/zeroshot-asp-checkpoints/zeroshot_asp_full.ckpt'
 # None
 # "/home/Research/ZS_ASP/model_backup/zeroshot_asp_full.ckpt"
 
@@ -49,7 +49,7 @@ test_key = ["valamelyik"] # four tracks for musdb, and your named track for othe
 test_type = "mix"
 infer_type = "mean"
 energy_thres = 0.1
-wave_output_path = "/home/gergo/[vscode_workspace]/[szakdoga]/[test_for_dlsep]" # output folder
+wave_output_path = '/kaggle/working/out' # output folder
 using_wiener = True # use wiener filter or not (default: True)
 using_whiting = False # use whiting or not (default: False)
 
@@ -58,6 +58,6 @@ wa_model_folder = "/home/Research/ZS_ASP/version_3/checkpoints/"
 wa_model_path = "zs_wa.ckpt"
 
 # for inference
-inference_file = "/home/gergo/[vscode_workspace]/[szakdoga]/[test_for_dlsep]/Zero_Shot_Audio_Source_Separation/data/mixed_noise.wav" # an audio file to separate
-inference_query = "/home/gergo/[vscode_workspace]/[szakdoga]/[test_for_dlsep]/Zero_Shot_Audio_Source_Separation/data/query" # a folder containing all samples for obtaining the query
+inference_file = '../input/zeroshot-asp-checkpoints/mixed_noise.wav' # an audio file to separate
+inference_query = '../input/zeroshot-asp-checkpoints/query' # a folder containing all samples for obtaining the query
 overlap_rate = 0.0 # [0.0, 1.0), 0 to disabled, recommand 0.5 for 50% overlap. Overlap will increase computation time and improve result quality

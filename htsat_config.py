@@ -13,7 +13,7 @@ dataset_type = "audioset"
 loss_type = "clip_bce"
 balanced_data = True
 
-resume_checkpoint = "/home/gergo/[vscode_workspace]/[szakdoga]/[test_for_dlsep]/Zero_Shot_Audio_Source_Separation/data/htsat_audioset_2048d.ckpt"
+resume_checkpoint = '../input/zeroshot-asp-checkpoints/htsat_audioset_2048d.ckpt'
 
 esc_fold = 0 # just for esc dataset, select the fold you need for evaluation and (+1) validation
 
